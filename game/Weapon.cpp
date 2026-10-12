@@ -2807,8 +2807,8 @@ void rvWeapon::Hitscan( const idDict& dict, const idVec3& muzzleOrigin, const id
 #endif
 			dir = end - muzzleOrigin;
 		} else {
-			ang = idMath::Sin( spreadRad * gameLocal.random.RandomFloat() );
-			spin = (float)DEG2RAD( 360.0f ) * gameLocal.random.RandomFloat();
+			ang = idMath::Sin( spreadRad );//no longer randomized spread for hitscan
+			spin = (float)DEG2RAD( 360.0f );//no longer randomized spread for hitscan
 			//RAVEN BEGIN
 			//asalmon: xbox must use the muzzleAxis so the aim can be adjusted for aim assistance
 #ifdef _XBOX
