@@ -75,8 +75,8 @@ entityDef weapon_rocketlauncher
 	"inv_icon"					"gfx/guis/hud/icons/item_rocket.tga"
 	"inv_name"					"#str_107409"	
 
-	"fireRate"					"0.2" //modified from 0.8 to 0.2
-	"reloadRate"				"0.2" //modified from 0.8 to 0.2
+	"fireRate"					".8"
+	"reloadRate"				".8"
 	"spread"					"0"
 
 	"ammoRegenStep"				"1"
@@ -85,8 +85,8 @@ entityDef weapon_rocketlauncher
 	"weaponname"				"Rocket Launcher"
 	"def_projectile"			"projectile_rocket"
 	"ammoType"					"ammo_rocketlauncher"
-	"clipSize"					"1"
-	"ammoRequired"				"1"
+	"clipSize"					"0"//from 1 to 0
+	"ammoRequired"				"0"//from 1 to 0
 	"gui"						"guis/weapons/rocketlauncher_ammo.gui"
 	"mtr_icon"					"gfx/guis/hud/icons/gun_rocketlauncher"
 
@@ -330,7 +330,7 @@ entityDef projectile_rocket
 	"def_damage"				"damage_rocketDirect"
 	"def_splash_damage"			"damage_rocketSplash"
 																											
-	"speed"						"3000" //modified speed from 900 to 3000
+	"speed"						"900"
 	"fuse"						"6"
 	"push"						"48000"
 	
