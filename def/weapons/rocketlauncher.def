@@ -83,7 +83,7 @@ entityDef weapon_rocketlauncher
 	"ammoRegenTime"				"1750"
 	
 	"weaponname"				"Rocket Launcher"
-	"def_projectile"			"projectile_rocket"
+	"def_projectile"			"projectile_hyperblaster"
 	"ammoType"					"ammo_rocketlauncher"
 	"clipSize"					"0"//from 1 to 0
 	"ammoRequired"				"0"//from 1 to 0
@@ -330,12 +330,12 @@ entityDef projectile_rocket
 	"def_damage"				"damage_rocketDirect"
 	"def_splash_damage"			"damage_rocketSplash"
 																											
-	"speed"						"900"
+	"speed"						"900"// from 900 to 1200
 	"fuse"						"6"
 	"push"						"48000"
 	
 							
-	"detonate_on_fuse"			"1"
+	"detonate_on_fuse"			"0"//from 1 to 0
 	"detonate_on_death"			"0"
 	"detonate_on_world"			"1"
 	"detonate_on_actor"			"1"

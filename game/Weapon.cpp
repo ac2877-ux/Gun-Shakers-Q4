@@ -2644,7 +2644,7 @@ void rvWeapon::LaunchProjectiles ( idDict& dict, const idVec3& muzzleOrigin, con
 		
 		// Calculate a random launch direction based on the spread
 		ang = idMath::Sin( spreadRad * gameLocal.random.RandomFloat() );
-		spin = (float)DEG2RAD( 360.0f ) * gameLocal.random.RandomFloat();
+		spin = (float)DEG2RAD( 360.0f );//removed the randomness
 //RAVEN BEGIN
 //asalmon: xbox must use muzzle Axis for aim assistance
 #ifdef _XBOX

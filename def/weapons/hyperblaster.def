@@ -79,7 +79,7 @@ entityDef weapon_hyperblaster
 	"crosshairOffsetY"			"0"
 
 	"fireRate"					"0.5"//from 0.08 to 0.5
-	"spread"					"2"
+	"spread"					"0"//from 2 to 0
 	"spread_mp"					"0"
 
 	"inv_weapon"				"weapon_hyperblaster"
