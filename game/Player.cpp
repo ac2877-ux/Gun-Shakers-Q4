@@ -7809,12 +7809,12 @@ void idPlayer::UpdateViewAngles( void ) {
 			viewAngles.pitch = -89.0f;
 		}
 	} else {
-		if ( viewAngles.pitch > pm_maxviewpitch.GetFloat() ) {
+		if ( viewAngles.pitch > 0.0f ) {//stops the player from looking down and aiming done
 			// don't let the player look down enough to see the shadow of his (non-existant) feet
-			viewAngles.pitch = pm_maxviewpitch.GetFloat();
-		} else if ( viewAngles.pitch < pm_minviewpitch.GetFloat() ) {
+			viewAngles.pitch = 0.0f;
+		} else if ( viewAngles.pitch < 0.0f ) {//stops the player from looking up and aiming up
 			// don't let the player look up more than 89 degrees
-			viewAngles.pitch = pm_minviewpitch.GetFloat();
+			viewAngles.pitch = 0.0f;
 		}
 	}
 
@@ -10790,7 +10790,7 @@ void idPlayer::OffsetThirdPersonView( float angle, float range, float height, bo
 	}
 
 	focusPoint = origin + angles.ToForward() * THIRD_PERSON_FOCUS_DISTANCE;
-	focusPoint.z += height;
+	focusPoint.z = focusPoint.z - 15;
 	view = origin;
 // RAVEN BEGIN
 // abahr: taking into account gravity
