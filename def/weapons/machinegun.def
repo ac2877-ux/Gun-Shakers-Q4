@@ -342,7 +342,7 @@ model weapon_machinegun_world
 
 entityDef hitscan_bullet
 {
-	"range"						"40000"
+	"range"						"400"//from 40000 to 400
 
 	"fx_impact"				"effects/weapons/machinegun/impact_default.fx"
 	"fx_impact_water"			"effects/ambient/splash_smll.fx"

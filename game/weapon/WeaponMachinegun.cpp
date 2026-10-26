@@ -233,6 +233,8 @@ stateResult_t rvWeaponMachinegun::State_Fire ( const stateParms_t& parms ) {
 			} else {
 				nextAttackTime = gameLocal.time + (fireRate * owner->PowerUpModifier ( PMOD_FIRERATE ));
 				Attack ( false, 1, spread, 0, 1.0f );
+				Attack(false, 1, spread + 15, 0, 1.0f);
+				Attack(false, 1, spread - 15, 0, 1.0f);
 			}
 			PlayAnim ( ANIMCHANNEL_ALL, "fire", 0 );	
 			return SRESULT_STAGE ( STAGE_WAIT );

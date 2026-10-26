@@ -87,7 +87,7 @@ entityDef weapon_grenadelauncher
 	"inv_name"					"#str_107403"	
 
 	"weaponname"				"Grenade Launcher"
-	"def_projectile"			"projectile_grenade"
+	"def_projectile"			"projectile_napalm"
 	"ammoType"					"ammo_grenadelauncher"
 	"clipSize"					"0"//from 8 to 0
 	"ammoRequired"				"0"//from 1 to 0
@@ -244,7 +244,7 @@ entityDef projectile_grenade
 	"def_damage"				"damage_grenadeDirect"
 	"def_splash_damage"			"damage_grenadeSplash"
 																											
-	"speed"						"700"
+	"speed"						"800"//from 700 to 800
 	"angular_velocity"			"-10 5 1"
 	"settle_duration"			"0.08"
 	
@@ -252,7 +252,7 @@ entityDef projectile_grenade
 	"angular_friction"			"0"
 	"contact_friction"			"10"
 	"bounce"					".65"
-	"gravity"					"1"
+	"gravity"					"1.2"
 	"fuse"						"2.5"
 								
 	"detonate_on_fuse"			"1"
@@ -280,7 +280,7 @@ entityDef projectile_grenade
 	"fx_impact_rock_mp"			"effects/weapons/rocketlauncher/impact_mp.fx"
 	"fx_impact_water"			"effects/ambient/splash_med.fx"
 
-	"friendly_impact"			"1"
+	"friendly_impact"			"0"//from 1 to 0
 
 	"snd_ricochet"				"grenade_bounce"	
 
