@@ -10790,7 +10790,7 @@ void idPlayer::OffsetThirdPersonView( float angle, float range, float height, bo
 	}
 
 	focusPoint = origin + angles.ToForward() * THIRD_PERSON_FOCUS_DISTANCE;
-	focusPoint.z = focusPoint.z - 15;
+	focusPoint.z += height;
 	view = origin;
 // RAVEN BEGIN
 // abahr: taking into account gravity
