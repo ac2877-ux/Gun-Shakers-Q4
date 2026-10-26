@@ -315,11 +315,13 @@ entityDef projectile_dmg
 	"linear_friction"			"0"
 	"angular_friction"			"0"
 	"contact_friction"			"10"
-	"fuse"					"10"
+	"bounce"					"1"
+	"gravity"					"0.1"
+	"fuse"					"2"
 								
 	"detonate_on_fuse"			"1"
 	"detonate_on_death"			"0"
-	"detonate_on_world"			"1"
+	"detonate_on_world"			"0"
 	"detonate_on_actor"			"0"
 								
 	"impact_gib"				"1"								
